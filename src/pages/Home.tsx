@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 export interface IHomePageProps {}
 
-const HomePage: React.FunctionComponent<IHomePageProps> = (props) => {
+const HomePage: FC<IHomePageProps> = (props) => {
     const navigate = useNavigate();
 
     return (
