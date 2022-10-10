@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 export interface ITestPageProps {}
 
-const TestPage: React.FunctionComponent<ITestPageProps> = (props) => {
+const TestPage: FC<ITestPageProps> = (props) => {
     const [searchParams, setSearchParams] = useSearchParams();
 
     const food = searchParams.get('food');

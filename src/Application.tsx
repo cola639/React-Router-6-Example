@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LayoutComponent from './components/Layout';
 import AboutPage from './pages/About';
@@ -7,7 +7,7 @@ import TestPage from './pages/Test';
 
 export interface IApplicationProps {}
 
-const Application: React.FunctionComponent<IApplicationProps> = (props) => {
+const Application: FC<IApplicationProps> = (props) => {
     return (
         <BrowserRouter>
             <Routes>
