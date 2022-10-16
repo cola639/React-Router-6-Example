@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LayoutComponent from './components/Layout';
 import AboutPage from './pages/About';
